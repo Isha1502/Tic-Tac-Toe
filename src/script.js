@@ -1,10 +1,3 @@
-<script>
-  window.console = window.console || function(t) {};
-
-
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
 </script>
 <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
@@ -77,7 +70,8 @@ $(document).ready(function () {
           playCount += 1;
           if (difficulty == 'Easy') {
             setTimeout(dumbAI, 1000);
-          } else if (difficulty == 'Hard') {
+          } 
+		  else if (difficulty == 'Hard') {
             setTimeout(expertAI, 1000);
           }
         }
@@ -86,9 +80,10 @@ $(document).ready(function () {
   });
 });
 
+
 function dumbAI() {
 
-  //Generate random TD ids - Dumb AI :)
+  //Generate random TD ids 
   if (playCount < 9 && playState == false) {
 
     while (true) {if (window.CP.shouldStopExecution(0)) break;
@@ -108,6 +103,8 @@ function dumbAI() {
     playState = !playState;
   }
 }
+
+
 
 
 //Expert AI.
