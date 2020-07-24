@@ -9,7 +9,7 @@ Features:
     
  How To Play:
  
-•	The objective of Tic Tac Toe is to get three in a row.Players alternate placing Xs and Os on the game board until either oppent has three tokens in a row or all nine squares  are filled.
+•	The objective of Tic Tac Toe is to get three in a row.Players alternate placing Xs and Os on the game board until either opponent has three tokens in a row or all nine squares  are filled.
            
 Minimax Algorithm
 
